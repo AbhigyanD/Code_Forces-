@@ -1,12 +1,8 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main() {
     int w;
-    cin >> w;
-    if (w%2 == 0 && w > 2){
-        cout << "YES" << endl;
-    } else {
-        cout << "NO" << endl;
-    }
+    scanf("%d", &w);
+    printf("%s\n", (w % 2 == 0 && w > 2) ? "YES" : "NO");
+    return 0;
 }
